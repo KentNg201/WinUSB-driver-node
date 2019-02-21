@@ -1,0 +1,25 @@
+{
+  "name": "feedme-pc-printer",
+  "version": "1.0.0",
+  "description": "An bridge between usb printer and client PC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "printer",
+    "windows",
+    "usb-printer"
+  ],
+  "author": "Kent Ng from Newtons Tech",
+  "dependencies": {
+    "@serialport/list": "^1.1.4",
+    "electron": "^4.0.5",
+    "escpos": "^2.4.11",
+    "node-cmd": "^3.0.0",
+    "node-hid": "^0.7.6",
+    "node-run-cmd": "^1.0.1",
+    "usb": "^1.5.0",
+    "usb-detection": "^4.1.0"
+  }
+}

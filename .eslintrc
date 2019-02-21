@@ -1,0 +1,21 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "rules": {
+        "no-use-before-define": ["error", { "variables": false }],
+        "import/no-unresolved": "off",
+        "import/prefer-default-export": "off",
+        "class-methods-use-this": "off",
+        "react/prop-types": 0,
+        "linebreak-style": 0,
+        "react/display-name": 0,
+        "indent": ["error", 2],
+        "prefer-destructuring": ["error", {"object": false}]
+    }
+}
