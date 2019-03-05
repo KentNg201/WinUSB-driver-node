@@ -12,6 +12,7 @@ yarn.lock
 !.env.example
 
 
-# image upload folder
+# driver utils
 driver/*.txt
 usb_driver/
+--type
