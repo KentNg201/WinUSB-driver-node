@@ -1,7 +1,9 @@
 const escpos = require('escpos');
-const device  = new escpos.USB(0x1FC9, 0x2016);
-// const device  = new escpos.USB(0x0471, 0x0055);
-const options = { encoding: "GB18030" /* default */ };
+
+const vid = process.argv[2];
+const pid = process.argv[3];
+const device  = new escpos.USB(vid, pid);
+const options = { encoding: 'GB18030'};
 const printer = new escpos.Printer(device, options);
 
 device.open(() => {

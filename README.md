@@ -1,11 +1,34 @@
-Feedme pc printer
+WinUSB Driver Node Installer
 =========================
-Feedme pc printer is a bridge between usb port and client PC, it is built by electron.
+Note: Only run on Windows Operating System
 
-## Use exe file to install driver
-Run the exe to install driver by using windows command line \(Need admin permission\)
+This tools is use for install custom USB Driver for windows, can use for install printer driver.
+
+## List all the USB devices
+Listing all your USB devices plugged in
 ```shell
-driver/wdi-simple.exe --type 0 --manufacturer "NXP Semiconductors" --name "Printer-80" --vid 0x1FC9 --pid 0x2016
+node list
+```
+Your need to get devices VID and PID in order to install driver
+
+## Install WinUSB driver
+Install the driver to the USB device, VID and PID must in hex form
+```shell
+node install <VID> <PID>
 ```
 
-or run .bat with permission
+For example of a printer device
+```shell
+node install 0x1FC9 0x2016
+```
+
+## Test Print
+You can test print after devices was install
+```shell
+node print <VID> <PID>
+```
+
+Example
+```shell
+node print 0x1FC9 0x2016
+```
