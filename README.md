@@ -4,6 +4,8 @@ Note: Only run on Windows Operating System
 
 This tools is use for install custom USB Driver for windows, can use for install printer driver.
 
+The based exe file is based on [libwdi](https://github.com/pbatard/libwdi), huge thanks to them!!
+
 ## List all the USB devices
 Listing all your USB devices plugged in
 ```shell
